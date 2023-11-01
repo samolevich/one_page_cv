@@ -275,21 +275,38 @@
         grid-area: 2 / 1 / 3 / 3;
       }
 
+      .dash::before {
+        content: ' - ';
+      }
+
+      b {
+        color: var(--primary-color);
+        letter-spacing: -0.4px;
+      }
+
       @media print {
         .wrapper:not(:first-child) {
           padding-top: unset;
         }
+
         .brief__title h2 {
           margin-bottom: unset;
         }
+
         .brief__title h1 {
           margin-top: unset;
         }
+
         .workplace {
-          padding-top: 2rem;
+          padding-top: 1rem;
         }
+
         .workplace__description {
           margin: unset;
+        }
+
+        .print_hide {
+          display: none;
         }
       }
     </style>
@@ -300,10 +317,9 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2JV3FBJ9P"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-B2JV3FBJ9P');
+    function gtag() {dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-B2JV3FBJ9P");
   </script>
   <body>
     <header class="wrapper">
@@ -315,7 +331,7 @@
         <div class="brief__contacts">
           <a href="tel:+79263248737">+7926 324 8737</a><br />
           <a href="tel:+375444764071">+375 444 76 40 71</a><br />
-          <a href="https://t.me/samolevich">t.me/samolevich</a><br>
+          <a href="https://t.me/samolevich">t.me/samolevich</a><br />
           <a href="mailto:samolevich@gmail.com">samolevich@gmail.com</a><br />
         </div>
         <div class="brief__location">
@@ -324,10 +340,7 @@
           Готов к переезду<br />
         </div>
         <div class="brief__img">
-          <img
-            src="https://avatars.githubusercontent.com/u/42073618?v=4"
-            alt="photo"
-          />
+          <img src="https://avatars.githubusercontent.com/u/42073618?v=4" alt="photo" />
         </div>
       </div>
     </header>
@@ -336,8 +349,7 @@
         <li class="workplace">
           <p class="workplace__title">Самозанятый</p>
           <p class="workplace__date">
-            <span class="workplace__duration">более 2 лет</span> Авг 2021 -
-            наст. время
+            <span class="workplace__duration">более 2 лет</span> Авг 2021 - наст. время
           </p>
           <p class="workplace__description">
             Завершение проекта ERP-системы в Айтеко (предыдущее местро работы) как самозанятый.<br />
@@ -350,13 +362,10 @@
         </li>
         <li class="workplace">
           <p class="workplace__title">
-            <a href="http://rasse.ru" target="_blank" rel="noopener noreferrer"
-              >ГК Айтеко (ООО РАССЭ)</a
-            >
+            <a href="http://rasse.ru" target="_blank" rel="noopener noreferrer">ГК Айтеко (ООО РАССЭ)</a>
           </p>
           <p class="workplace__date">
-            <span class="workplace__duration">11 месяцев</span> Окт 2020 - Авг
-            2021
+            <span class="workplace__duration">11 месяцев</span> Окт 2020 - Авг 2021
           </p>
           <p class="workplace__description">
             React JS, Redux, AntDesign. Внутренняя ERP-система.<br />
@@ -368,16 +377,10 @@
         </li>
         <li class="workplace">
           <p class="workplace__title">
-            <a
-              href="http://www.mchs.gov.ru/ministerstvo/uchrezhdeniya-mchs-rossii/federalnye-gosudarstvennye-byudzhetnye-uchrezhdeniya/fgbu-informacionno-analiticheskiy-centr-mchs-rossii"
-              target="_blank"
-              rel="noopener noreferrer"
-              >ФГБУ ИАЦ МЧС</a
-            >
+            <a href="http://www.mchs.gov.ru/ministerstvo/uchrezhdeniya-mchs-rossii/federalnye-gosudarstvennye-byudzhetnye-uchrezhdeniya/fgbu-informacionno-analiticheskiy-centr-mchs-rossii" target="_blank" rel="noopener noreferrer">ФГБУ ИАЦ МЧС</a>
           </p>
           <p class="workplace__date">
-            <span class="workplace__duration">6 месяцев</span> Апр 2020 - Сен
-            2020
+            <span class="workplace__duration">6 месяцев</span> Апр 2020 - Сен 2020
           </p>
           <p class="workplace__description">
             JS, CSS (flexbox, grid), VueJS<br />
@@ -389,16 +392,10 @@
         </li>
         <li class="workplace">
           <p class="workplace__title">
-            <a
-              href="https://elbrusboot.camp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Буткемп Эльбрус</a
-            >
+            <a href="https://elbrusboot.camp/" target="_blank" rel="noopener noreferrer">Буткемп Эльбрус</a>
           </p>
           <p class="workplace__date">
-            <span class="workplace__duration">4 месяцев</span>Дек 2019 - Мар
-            2020
+            <span class="workplace__duration">4 месяцев</span> Дек 2019 - Мар 2020
           </p>
           <p class="workplace__description">Обучение и стажировка.</p>
         </li>
@@ -415,26 +412,9 @@
         <b>О себе:</b> Люблю решать задачки на Leetcode, в процессе изучения Angular и Next.JS, самостоятельно совершенствую английский, люблю научную фантастику (Азимов, Ефремов, Хайнлайн, Лю Цысинь), в планах изучить глубже Vue, Docker, k8s.
       </p>
       <p class="links">
-        <a
-          href="https://samolevich.github.io/cv/"
-          target="_blank"
-          rel="noopener noreferrer"
-          >Личный сайт - https://samolevich.github.io/cv/</a
-        ><br />
-        <a
-          href="https://github.com/samolevich/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Профиль на Github - https://github.com/samolevich/ </a
-        ><br />
-        <a
-          href="https://www.codewars.com/users/samolevich/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Профиль на CodeWars - https://www.codewars.com/users/samolevich/
-        </a>
+        <a href="https://samolevich.github.io/cv/" target="_blank" rel="noopener noreferrer">Личный сайт - https://samolevich.github.io/cv/</a><br />
+        <a href="https://github.com/samolevich/" target="_blank" rel="noopener noreferrer">Профиль на Github - https://github.com/samolevich/</a><br />
+        <span class="print_hide"><a href="https://www.codewars.com/users/samolevich/" target="_blank" rel="noopener noreferrer">Профиль на CodeWars - https://www.codewars.com/users/samolevich/</a></span>
       </p>
     </footer>
   </body>
